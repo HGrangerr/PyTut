@@ -67,8 +67,8 @@ else:
 # Admin page
 # Please login
 # Admin page
-# because user == admin is true so it doesnt matter loggen in is true or false
-#  this isnt any expression , it juat is switching btw true and false
+# because user == admin is true so it doesnt matter logged_in is true or false
+#  this isn't any expression , it just is switching btw true and false
 #
 
 
@@ -101,9 +101,71 @@ print(a == b)
 
 
 
-# False Values:
+# False Values: all the things in python that evaluates to true
     # False
     # None
     # Zero of any numeric type
     # Any empty sequence. For example, '', (), [].
     # Any empty mapping. For example, {}
+
+
+condition = False
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to False
+
+condition = None
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to False
+
+condition = 0
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to False
+
+condition = 10
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to True
+
+condition = ''   # empty string
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to False
+
+condition = 'hi'   # any string with chars evaluates to true
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+# Evaluated to True
+
+
+#  Any empty sequence. For example, '', (), [].
+    # Any empty mapping. For example, {}
+
+condition = []  # any string with chars evaluates to true
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+
+# Evaluated to False
