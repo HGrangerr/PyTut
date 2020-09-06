@@ -1,6 +1,6 @@
 # loops  and iterations
 
-nums = [1,2,3,45,5]
+nums = [1, 2, 3, 45, 5]
 
 for index in nums:
     print(index)
@@ -29,12 +29,12 @@ for index in nums:
         continue
     print(index)
 
-# #1
+# 1
 # 2
 # found
 # 45
 # 5
-# continue moves to next iteratio
+# continue jumps to next iteration
 
 for index in nums:
     if index == 3:
@@ -51,8 +51,8 @@ for index in nums:
 # nested for loops
 
 for index in nums:
-    for letter in'abc':
-        print(index,letter)
+    for letter in 'abc':
+        print(index, letter)
     print('\n')
 
 for i in range(5):
@@ -62,13 +62,13 @@ print('\n')
 # 1
 # 2
 # 3
-# 4
+# 4 excludes 5
 
-for i in range(1,5):
+for i in range(1, 5):
     print(i)
 print('\n')
-#
-# 1
+
+# 1 starts from 1
 # 2
 # 3
 # 4
@@ -92,7 +92,7 @@ print('\n')
 
 x = 0
 while x < 10:
-    if x==5:
+    if x == 5:
         break
     print(x)
     x += 2

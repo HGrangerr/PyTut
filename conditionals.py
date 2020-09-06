@@ -83,7 +83,7 @@ print(a == b)
 
 
 print(a is b)
-# False, because they are 2 diff object sin m/m
+# False, because they are 2 diff objects in m/m
 # how do we know that, we can print out these 2 ids using built function id
 
 print(id(a), id(b))
@@ -103,7 +103,7 @@ print(a == b)
 
 # False Values: all the things in python that evaluates to true
     # False
-    # None
+    # None without ''
     # Zero of any numeric type
     # Any empty sequence. For example, '', (), [].
     # Any empty mapping. For example, {}
