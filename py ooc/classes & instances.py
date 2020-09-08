@@ -1,6 +1,7 @@
-# classes - data and funcs together in a way its esy to manage nad reuse
+# classes - logically group data and funcs together in a way its esy to manage
+# and reuse and build upon
 # we ll call it attributes and methods
-
+# each class obj is gonna have specific attributes and methods
 class Student:
     pass
 
@@ -10,6 +11,10 @@ class Student:
 
 stu1 = Student()
 stu2 = Student()
+
+
+# diff btw classes and instance variables
+# classes are blueprint for creating instances
 
 stu2.first = 'Rach'
 stu2.second = 'B R'
@@ -42,3 +47,16 @@ print(emp_1.print_name())
 # Rach.BR@company.com
 # 0
 # Rach BR
+
+
+print()
+# print with no arguments can be used to print blank line
+
+emp_2 = Employee('Aara', 'BR', 50000)
+print(emp_2.email)
+print(emp_2.pay)
+print(emp_2.print_name())
+
+# Aara.BR@company.com
+# 50000
+# Aara BR
