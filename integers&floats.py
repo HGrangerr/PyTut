@@ -6,7 +6,9 @@ print(type(number), type(float_no))
 
 # Arithmetic operators
 
-add = number + float_no
+add = float(number) + float_no
+print('Sum of {0} and {1} is {2}'.format(float(number), float_no, add))
+# Sum of 3.0 and 3.14 is 6.140000000000001
 subs = float_no - number
 
 division = 10 / 4
@@ -19,7 +21,7 @@ expo = 10 ** 3
 mod = 10 % 2
 
 print(number, add, subs, division, floor_div, mul, expo, mod)
-
+#precedence , pemdas rule
 # Order of operation use parenthesis
 
 
@@ -61,3 +63,14 @@ print(23 <= 34)
 # Type casting
 string_num = '24'
 print(int(string_num))
+
+a = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9
+print(a)
+
+# \ continuation character
+width = 17
+print(width // 2)  # 8
+print(width / 2.0)  # 8.5
+print(1+2*5) # 11
