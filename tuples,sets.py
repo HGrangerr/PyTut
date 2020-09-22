@@ -29,7 +29,7 @@ print(tuple_1)
 # stuple_2[0]='kannada'
 
 # TypeError: 'tuple' object does not support item assignment
-# if we know the list isnt gona change , you can use tuple
+# if we know the list isn't gonna change , you can use tuple
 
 
 # SETS ARE UNORDERED , NON DUPLICATE LIST OF ITEMS

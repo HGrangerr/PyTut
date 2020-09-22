@@ -82,7 +82,7 @@ print(a == b)
 
 
 
-print(a is b)
+print(a is b) # identity operator
 # False, because they are 2 diff objects in m/m
 # how do we know that, we can print out these 2 ids using built function id
 
@@ -101,12 +101,12 @@ print(a == b)
 
 
 
-# False Values: all the things in python that evaluates to true
-    # False
-    # None without ''
-    # Zero of any numeric type
-    # Any empty sequence. For example, '', (), [].
-    # Any empty mapping. For example, {}
+'''False Values: all the things in python that evaluates to true
+    False
+    None without ''
+    Zero of any numeric type
+    Any empty sequence. For example, '', (), [].
+    Any empty mapping. For example, {}'''
 
 
 condition = False

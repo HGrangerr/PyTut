@@ -11,6 +11,7 @@ books = {
     'price': 345
 }
 print(books)
+print( 'leo tolstoy' in books)  #False
 
 print(books['title'])
 # print(books[saled_copies])

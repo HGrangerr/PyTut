@@ -43,6 +43,7 @@ names.extend(some_more)
 names = names + some_more + ['hi', 'hello']
 
 print(names)
+# ['atharv', 'rach', 'aara', 'akka', 'amma', 'appa', 'tush ', 'tarun', 'tush ', 'tarun', 'hi', 'hello']
 
 # Python program to extend a list using 'slicing'
 
@@ -54,9 +55,10 @@ a[:0] = [30]
 
 # add two numbers
 a[:0] = [40, 50]
-a[-1:] = [90]
-
+# a[-1:] = [90,29] this omits 17
+a.extend([90, 29])
 print(a)
+# [40, 50, 30, 10, 12, 13, 17, 90, 29]
 # in slicing values are added at start
 
 
@@ -93,7 +95,9 @@ print(names)
 
 a.sort()
 print(a)
-# print(a.sort()) wont work
+# print(a.sort()) wont work ,
+# coz sorting takes place in place and it returns none , so none is displayed if we call it inside of print statement
+
 
 revised_names = sorted(names)
 print(revised_names)
@@ -104,6 +108,9 @@ sum_of = sum(a)
 
 idx = names.index('atharv')
 
+# Python’s membership operators (in) test for membership in a sequence,
+# such as strings, lists, or tuples. There are two membership operators as explained below −
+
 print(idx, 'tush' in names)
 print('tush' in revised_names)
 
@@ -113,13 +120,13 @@ for index in names:
     print(index)
 print('\n')
 
-for index,name in enumerate(names):
-    print(index,name)
+for index, name in enumerate(names):
+    print(index, name)
 
 print('\n')
 
-for index, name in enumerate(names,start=1):
-        print(index, name)
+for index, name in enumerate(names, start=1):
+    print(index, name)
 print('\n')
 fam = '(^)'.join(names)
 
