@@ -84,3 +84,14 @@ width = 17
 print(width // 2)  # 8
 print(width / 2.0)  # 8.5
 print(1 + 2 * 5)  # 11
+print(5 + 30 - 4 * 20 / 12 // 3 % 2 ** 2)
+
+print(15 / 3 * 2.5 % 2 ** 2)
+#
+print(5 * 3 / 2.5 % 2 ** 2)
+
+print(4)
+
+from random import *
+print(randint(2,5))
+

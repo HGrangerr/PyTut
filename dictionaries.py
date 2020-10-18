@@ -84,3 +84,6 @@ print('\n\n')
 # title:War & peace
 # author:Leo Tolstoy
 # saled_copies:5 Million
+nums =[1,2,3]
+my_list = [n for n in nums]
+print(my_list)

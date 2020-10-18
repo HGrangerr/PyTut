@@ -46,7 +46,7 @@ class Employee:
 emp_1 = Employee('Rach', 'BR')
 print(emp_1.email)
 print(emp_1.pay)
-print(emp_1.print_name())
+print(emp_1.print_name())  # gets translated into Employee.print_name(emp_1)
 
 # Rach.BR@company.com
 # 0
@@ -56,7 +56,7 @@ print(emp_1.print_name())
 # but we have to pass int he instance as an argument
 
 
-print(print(emp_1.print_name()))
+print(emp_1.print_name())
 print(Employee.print_name(emp_1))
 
 # that's what exactly happens in the background whenever we run

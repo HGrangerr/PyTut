@@ -6,8 +6,8 @@ def info(*args, **kwargs):
     print(args, kwargs)
 
 
-# *args can take in any iteratable objects as argument
-# kwargs can take a dictionary
+# *args can take in any iterable objects as argument
+# kwargs (Arbitrary Keyword Arguments )can take a dictionary
 # u can use anything in place of args , but args is the convention
 # * is called unpacking operator (*)
 

@@ -3,7 +3,10 @@ from itertools import chain
 
 names = ['rach', 'aara', 'akka', 'amma']
 print(names)
+names[3] = "srggghg"  # replaces the value , but cant be used to extend the list
+print(names)
 
+names = ['rach', 'aara', 'akka', 'amma']
 print(names[0])
 print(len(names))
 print(
@@ -12,16 +15,30 @@ print(names[-2])
 
 # slicing
 print(names[0:])
+# also
+print(names[:])
+
+print(names[:-2])
 print(names[0:2])
 print(names[:2])
 print(names[3:])
 
+print(names[-1:])
+print(names[:-1:2])  # step 2
+
 # modifying lists
-# many ways  1)append() 2)insert(pos, value) 3)extend()
+# many ways  1)append() 2)insert(pos, value) 3)extend() 4) + operator  5) slicing 6) Using chain()
 
 names.append('appa')  # add at end of list
 
 names.insert(0, 'atharv')  # insert at required position
+
+# names.insert(1, 5)
+# Traceback (most recent call last):
+#   File "C:/Users/User/Desktop/py tutorial/List,tuples,sets.py", line 90, in <module>
+#     names.sort()
+# TypeError: '<' not supported between instances of 'int' and 'str'
+
 
 some_more = ['tush ', 'tarun']
 
@@ -55,13 +72,15 @@ a[:0] = [30]
 
 # add two numbers
 a[:0] = [40, 50]
+
+a[1:3] = [50, 60]
+print(a)  # [40, 50, 60, 10, 12, 13, 17]
+
 # a[-1:] = [90,29] this omits 17
 a.extend([90, 29])
 print(a)
 # [40, 50, 30, 10, 12, 13, 17, 90, 29]
 # in slicing values are added at start
-
-
 # Using chain():  list(chain(a, [x, y, z..]))
 
 # python program to extend a list using
@@ -79,12 +98,17 @@ names.remove('tarun')
 print(names)
 # pop
 
+
 names.pop()
 print(names)
-# reverse
 
+# reverse        1) reverse   2) slicing 3) sort(reverse=True
 names.reverse()
 print(names)
+
+# names = ['rach', 'aara', 'akka', 'amma']
+print(names[::-1])
+# ['amma', 'akka', 'aara', 'rach']
 
 # sort
 names.sort()
@@ -135,3 +159,19 @@ print(fam)
 new_names = fam.split('(^)')
 
 print(new_names)
+
+del names
+# print(names)
+
+li = [1, 3, 5, 7, 8]
+li.clear()
+print(li)
+
+li1 = [1, 3, 5, 7, 8]
+li2 = li1.copy()
+print(li2)
+
+names = [1, 'aara', 'akka', 'amma']
+
+li = [1, 3, 5, 7, 8, 8, 8]
+print(li.count(8))  # 3 count the no of occurrences of a particular element

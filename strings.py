@@ -22,6 +22,7 @@ print(name, place, new_name, string_name, "\n", msgs)
 
 
 # To embed a string in output use %s
+print("{} ,{} ! {} {} {}".format('I like the quote', ":", string_name, ":", msgs))
 print("%s %s %s %s %s" % ('I like the quote', ":", string_name, ":", msgs))
 
 # I like the quote python for "beginners"  hi
@@ -39,7 +40,7 @@ print('\n' * 5)
 
 name.upper()  # wont work if not assigned back to string,not inplace,immutable
 print(name)  # Output:hello world
-
+print(name.upper())  # HELLO WORLD
 name = name.upper()  # works
 print(name)
 
@@ -59,7 +60,7 @@ multiline = "Python will ignore string literals that are not assigned to a varia
 
 print(multiline)
 
-# \ is called continuity character
+# \ is called continuity character , prints the above line in single line
 
 
 print(name[0])  # H
@@ -111,6 +112,6 @@ print(len(msg))  # 48
 # '29'
 
 
-num = print(str(29) + '2')  # 292
-
-print(num)  # none print returns nothing
+# num = print(str(29) + '2')  # 292
+print(str(29) + '2') # 292
+# print(num)  # none print returns nothing
