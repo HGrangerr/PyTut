@@ -55,7 +55,6 @@ print(emp_1.print_name())  # gets translated into Employee.print_name(emp_1)
 # we can run these class methods using class name also
 # but we have to pass int he instance as an argument
 
-
 print(emp_1.print_name())
 print(Employee.print_name(emp_1))
 

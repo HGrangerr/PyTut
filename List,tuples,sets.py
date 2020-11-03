@@ -9,8 +9,9 @@ print(names)
 names = ['rach', 'aara', 'akka', 'amma']
 print(names[0])
 print(len(names))
-print(
-    names[-1])  # as the list grows , length night change so last index no might change , but -1 will always be the last
+print(names[-1])
+# as the list grows ,
+# length night change so last index no might change , but -1 will always be the last
 print(names[-2])
 
 # slicing
@@ -23,9 +24,15 @@ print(names[0:2])
 print(names[:2])
 print(names[3:])
 
+names = ['rach', 'aara', 'akka', 'amma']
 print(names[-1:])
 print(names[:-1:2])  # step 2
 
+# ['amma']
+# ['rach', 'akka']
+
+# 2d array
+# multiple assignment trick
 # modifying lists
 # many ways  1)append() 2)insert(pos, value) 3)extend() 4) + operator  5) slicing 6) Using chain()
 
@@ -58,7 +65,7 @@ names.extend(some_more)
 # Using ‘+’ operator:
 
 names = names + some_more + ['hi', 'hello']
-
+names = names + some_more + ['hi']  # u can use this in a loop , to add one value at a time
 print(names)
 # ['atharv', 'rach', 'aara', 'akka', 'amma', 'appa', 'tush ', 'tarun', 'tush ', 'tarun', 'hi', 'hello']
 
@@ -175,3 +182,10 @@ names = [1, 'aara', 'akka', 'amma']
 
 li = [1, 3, 5, 7, 8, 8, 8]
 print(li.count(8))  # 3 count the no of occurrences of a particular element
+
+list1 = [1, 3, 4, 6]
+list1 = list1 * 3
+print(list1)
+
+
+

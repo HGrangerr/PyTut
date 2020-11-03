@@ -6,7 +6,7 @@
 # or used to create a specific type fof parent class
 # ex employee is parent of dev and managers
 
-# here im creatig a subclass called dev  and keep it empty , yet when i create obj of thta type , theres no error
+# here im creating a subclass called dev  and keep it empty , yet when i create obj of thta type , theres no error
 # we get the output ,
 # so all of the functionality from the parent class is getting inherited
 
@@ -44,9 +44,8 @@ print(dev_2.email)
 
 
 # so what really happens here is that py is gonna search for init method ,
-# but its not gonna find it the
-
-# dev class so searches it in  the parent class , this is called method resolution order
+# but its not gonna find it in  the dev class
+# so searches it in  the parent class , this is called method resolution order
 # we can know more about it using help() function
 #
 # print(help(Dev))
@@ -87,8 +86,8 @@ print(dev_2.email)
 #  |  raise_amt = 1.04
 #
 #
-# so now if i had t change te raise_amt ,  you can specify it in the beg of subclass
-# , this wont the affect the parent class and its members
+# so now if i had to change the raise_amt ,  you can specify it in the beginning of subclass
+# this wont the affect the parent class and its members
 # again when i call the methods its gonna search the attributes in the same order
 
 class Dev(Employee):
@@ -176,12 +175,19 @@ mgr_1.add_emp(dev_2)
 mgr_1.remove_emp(dev_2)
 
 mgr_1.print_emps()
-mgr_1.string_emps()
+mgr_1.print_emps_as_str()
 
 print(Manager.list1)
 print(mgr_1.list1)
 
-# isinstance()
-#  issubclass()
+print(isinstance(mgr_1, Manager))  # True
+# this func is used to check whether A given instance is a instance of a given class
+
+
+print(issubclass(Manager, Employee))
+print(issubclass(Employee, Employee))
+
+# True
+# True
 
 # example from HTTPException() class

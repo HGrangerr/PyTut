@@ -42,7 +42,7 @@ print(tuple_1)
 
 # Python list method list() takes sequence types and converts them to lists.
 # This is used to convert a given tuple into list.
-aTuple = (123, 'xyz', 'zara', 'abc');
+aTuple = (123, 'xyz', 'zara', 'abc')
 aList = list(aTuple)
 
 print(aList)
@@ -92,3 +92,7 @@ empty_tuple = tuple()
 # Empty Sets
 empty_set = {} # This isn't right! It's a dict
 empty_set = set()
+
+my_set={}
+print(type(my_set))
+# <class 'dict'>
