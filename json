@@ -1,0 +1,2 @@
+json. loads() method can be used to parse a valid JSON string and convert it into a Python Dictionary.
+It is mainly used for deserializing native string, byte, or byte array which consists of JSON data into Python Dictionary.
